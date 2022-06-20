@@ -19,7 +19,12 @@ struct EmojiArtDocumentView: View {
     }
     
     var documentBody: some View {
-        Color.yellow
+        ZStack {
+            Color.yellow
+            ForEach(document.emojis) { emoji in
+                Text(emoji.text)
+            }
+        }
     }
     
     var palette: some View {
