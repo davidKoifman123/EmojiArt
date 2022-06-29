@@ -10,10 +10,19 @@ import SwiftUI
 class EmojiArtDocument: ObservableObject {
     @Published private(set) var emojiArt: EmojiArtModel {
         didSet {
-            autosave()
+            scheduleAutosave()
             if emojiArt.background != oldValue.background {
                 fetchBackgroudImageDataIfNecessary()
             }
+        }
+    }
+    
+    private var autosaveTime: Timer?
+    
+    private func scheduleAutosave() {
+        autosaveTime?.invalidate()
+        autosaveTime = Timer.scheduledTimer(withTimeInterval: Autosave.coalescingInterval, repeats: false) { _ in
+            self.autosave()
         }
     }
     
@@ -23,6 +32,7 @@ class EmojiArtDocument: ObservableObject {
             let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first
             return documentDirectory?.appendingPathComponent(filename)
         }
+        static let coalescingInterval = 5.0
     }
     
     private func autosave() {
