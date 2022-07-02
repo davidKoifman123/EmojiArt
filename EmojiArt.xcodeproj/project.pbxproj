@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9647D0E1286F889B000F3928 /* PaletteEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9647D0E0286F889B000F3928 /* PaletteEditor.swift */; };
 		96759D2A286CB9B9000BB29A /* PaletteStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96759D29286CB9B9000BB29A /* PaletteStore.swift */; };
 		96B4807928607F6000A18C1B /* EmojiArtApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B4807828607F6000A18C1B /* EmojiArtApp.swift */; };
 		96B4807B28607F6000A18C1B /* EmojiArtDocumentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B4807A28607F6000A18C1B /* EmojiArtDocumentView.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9647D0E0286F889B000F3928 /* PaletteEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaletteEditor.swift; sourceTree = "<group>"; };
 		96759D29286CB9B9000BB29A /* PaletteStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaletteStore.swift; sourceTree = "<group>"; };
 		96B4807528607F6000A18C1B /* EmojiArt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmojiArt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96B4807828607F6000A18C1B /* EmojiArtApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiArtApp.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				96CFFF65286F0665000ED11D /* PaletteChooser.swift */,
+				9647D0E0286F889B000F3928 /* PaletteEditor.swift */,
 				96B4807828607F6000A18C1B /* EmojiArtApp.swift */,
 				96B4807A28607F6000A18C1B /* EmojiArtDocumentView.swift */,
 				96B480A22860818F00A18C1B /* EmojiArtModel.swift */,
@@ -280,6 +283,7 @@
 			files = (
 				96B480AD286096C700A18C1B /* UtilityViews.swift in Sources */,
 				96759D2A286CB9B9000BB29A /* PaletteStore.swift in Sources */,
+				9647D0E1286F889B000F3928 /* PaletteEditor.swift in Sources */,
 				96B4807B28607F6000A18C1B /* EmojiArtDocumentView.swift in Sources */,
 				96B480A62860879D00A18C1B /* EmojiArtModel.Background.swift in Sources */,
 				96B480AB2860966800A18C1B /* UtilityExtensions.swift in Sources */,
