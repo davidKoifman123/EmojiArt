@@ -108,3 +108,6 @@ struct PaletteChooser_Previews: PreviewProvider {
         PaletteChooser()
     }
 }
+
+
+//
