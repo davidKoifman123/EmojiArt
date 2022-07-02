@@ -75,7 +75,7 @@ struct PaletteChooser: View {
         }
         .id(palette.id)
         .transition(rollTransition)
-        .sheet(isPresented: $editing) {
+        .popover(isPresented: $editing) {
             PaletteEditor()
         }
     }
