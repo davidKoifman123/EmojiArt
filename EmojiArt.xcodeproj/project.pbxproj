@@ -44,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		9647D0E0286F889B000F3928 /* PaletteEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaletteEditor.swift; sourceTree = "<group>"; };
+		9656A5D22874BF9100572446 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		9674457B28708C7B009B7E5A /* PaletteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaletteManager.swift; sourceTree = "<group>"; };
 		96759D29286CB9B9000BB29A /* PaletteStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaletteStore.swift; sourceTree = "<group>"; };
 		96B4807528607F6000A18C1B /* EmojiArt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmojiArt.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,6 +113,7 @@
 		96B4807728607F6000A18C1B /* EmojiArt */ = {
 			isa = PBXGroup;
 			children = (
+				9656A5D22874BF9100572446 /* Info.plist */,
 				96CFFF65286F0665000ED11D /* PaletteChooser.swift */,
 				9647D0E0286F889B000F3928 /* PaletteEditor.swift */,
 				9674457B28708C7B009B7E5A /* PaletteManager.swift */,
@@ -458,6 +460,7 @@
 				DEVELOPMENT_TEAM = 5HJHJXHBD5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EmojiArt/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -487,6 +490,7 @@
 				DEVELOPMENT_TEAM = 5HJHJXHBD5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EmojiArt/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
