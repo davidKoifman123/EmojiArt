@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		96429D0C28770D550055CA44 /* UtilityViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B480AC286096C700A18C1B /* UtilityViews.swift */; };
 		9647D0E1286F889B000F3928 /* PaletteEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9647D0E0286F889B000F3928 /* PaletteEditor.swift */; };
 		9674457C28708C7B009B7E5A /* PaletteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9674457B28708C7B009B7E5A /* PaletteManager.swift */; };
 		96759D2A286CB9B9000BB29A /* PaletteStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96759D29286CB9B9000BB29A /* PaletteStore.swift */; };
@@ -305,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96B4808A28607F6200A18C1B /* EmojiArtTests.swift in Sources */,
+				96429D0C28770D550055CA44 /* UtilityViews.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
