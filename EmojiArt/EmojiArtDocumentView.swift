@@ -62,8 +62,7 @@ struct EmojiArtDocumentView: View {
             zoomToFit(image, in: geometry.size)
             }
         }
-        .toolbar {
-            ToolbarItemGroup(placement: .bottomBar) {
+        .compactableToolbar {
                 AnimatedActionButton(title: "Paste Background", systemImage: "doc.on.clipboard") {
                     pasteBackground()
                 }
@@ -82,7 +81,6 @@ struct EmojiArtDocumentView: View {
             }
         }
      }
-    }
     
     private func pasteBackground() {
         
