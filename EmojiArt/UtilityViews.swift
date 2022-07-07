@@ -7,6 +7,26 @@
 
 import SwiftUI
 
+struct IdentifiableAlert: Identifiable {
+    var id: String
+    var alert: () -> Alert
+    
+    init(id: String, alert: @escaping () -> Alert) {
+        self.id = id
+        self.alert = alert
+    }
+    
+    init(id: String, title: String, message: String) {
+        self.id = id
+        alert = { Alert(title: Text(title), message: Text(message), dismissButton: .default(Text("OK"))) }
+    }
+
+    init(title: String, message: String) {
+        self.id = title + message
+        alert = { Alert(title: Text(title), message: Text(message), dismissButton: .default(Text("OK"))) }
+    }
+}
+
 struct OptionalImage: View {
     var uiImage: UIImage?
     
@@ -37,11 +57,6 @@ struct AnimatedActionButton: View {
             }
         }
     }
-}
-
-struct IdentifiableAlert: Identifiable {
-    var id: String
-    var alert: () -> Alert
 }
 
 struct UndoButton: View {
